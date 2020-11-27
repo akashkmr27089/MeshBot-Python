@@ -1,7 +1,6 @@
 import socket
-import NewConnectionThread
-from NewConnectionThread import *
-from NodeModel import *
+from .NewConnectionThread import MyThread
+from .NodeModel import *
 
 class MasterNodeServer():
 
@@ -37,12 +36,12 @@ class MasterNodeServer():
                     break
 
 #Staring MasterNode
-doc = MasterNodeServer(
-    NodeList = {
-        231: NodeModel(231, 123, 234, ListeningPort = 1252),
-        551: NodeModel(551, 541, 234, ListeningPort = 2354),
-        612: NodeModel(612, 555, 525, ListeningPort = 1300),
-        654: NodeModel(654, 985, 201, ListeningPort = 658)
-    } 
-)
-doc.start()
+# doc = MasterNodeServer(
+#     NodeList = {
+#         231: NodeModel(231, 123, 234, ListeningPort = 1252),
+#         551: NodeModel(551, 541, 234, ListeningPort = 2354),
+#         612: NodeModel(612, 555, 525, ListeningPort = 1300),
+#         654: NodeModel(654, 985, 201, ListeningPort = 658)
+#     } 
+# )
+# doc.start()

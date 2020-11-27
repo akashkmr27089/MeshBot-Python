@@ -1,6 +1,6 @@
 import threading
 import time
-from ServerUtils import *
+from .ServerUtils import *
 
 class MyThread(threading.Thread):
   # overriding constructor
